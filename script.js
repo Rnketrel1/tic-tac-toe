@@ -94,6 +94,7 @@ const Game = (() => {
     submitButton.addEventListener("click", (event) => {
       event.preventDefault(); // Prevent form submission
       getUserInput(); // Get player names
+      Gameboard.resetBoard();
     });
   })();
 

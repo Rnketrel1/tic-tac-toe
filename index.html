@@ -3,20 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="board-container"></div>
-    <form>
-      <label for="player1input">Player 1:</label>
-      <input id="player1input" type="text" />
-      <label for="player2input">Player 2:</label>
-      <input id="player2input" type="text" />
-      <button class="submit">Play Game!</button>
-    </form>
-    <button class="reset">Reset</button>
-    <p class="winner"></p>
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div class="board-container"></div>
+      <form class="player-form">
+        <div class="input-group">
+          <input
+            id="player1input"
+            type="text"
+            placeholder="Player 1 (X)"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            id="player2input"
+            type="text"
+            placeholder="Player 2 (O)"
+            required
+          />
+        </div>
+        <button class="submit" type="button">Start Game</button>
+      </form>
+      <button class="reset">Reset Game</button>
+      <p class="winner"></p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
